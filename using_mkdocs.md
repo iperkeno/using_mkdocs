@@ -1,4 +1,4 @@
-# Using mkdocs
+# Using mkdocs v.20200301
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -30,3 +30,52 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 [wxWidget Manual]( /xwWidgets.pdf )
 
 [web]( https://fontawesome.com/icons/link?style=solid )
+
+## **_mkdocs** directory
+In order to have all makdocs files in the same directory,
+we create this structure:
+```
+└─┬
+
+/docs-root-dir
+	│
+	├── file-1
+	├── ..
+	├── ..
+	├── file-n
+	│
+	└──/_mkdocs
+		│
+		├─ mkdocs.yaml
+		├─ extra.css
+		├─ markdown_style.css
+		├─ .. other stylesheets
+		└─ using_mkdocs.md
+
+```
+
+
+inside mkdocs.yaml define docs directory as the parent of yaml file,
+define the extra css directory as the _mkdocs directory itself:
+
+```yaml
+	docs_dir: ".."
+
+	extra_css:
+		- "/_mkdocs/extra.css"
+```
+## Serve multiple mkdocs
+Using command `make serve` the docs on the default port **8000**
+
+
+In order to serve multiple mkdocs repositories is necessary to specify for each one
+a different address:port couple:
+```	
+	mkdocs serve --dev-addr localhost:9000
+```
+
+## mkdocs PDF
+
+[mkdocs-with-pdf](https://pypi.org/project/mkdocs-with-pdf/)
+
+
