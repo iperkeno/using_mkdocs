@@ -1,0 +1,54 @@
+site_name: LumenD documentation
+site_description: LumenD library documentation
+site_author: Fabio De Angelis
+
+docs_dir: ".."
+
+extra_css:
+    - "/_mkdocs/extra.css"
+
+theme: 
+    name: readthedocs
+    #name: rtd-dropdown
+    highlightjs: true
+    hljs_languages:
+        - tcl
+        - c
+        - yaml
+        - django
+    prev_next_buttons_location: false
+    navigation_depth: 2
+    collapse_navigation: true
+    titles_only:        true
+    sticky_navigation:  true
+    
+
+
+    
+#nav:
+#    - Home: index.md
+#    - User Guide:  ./LUMEND_System_Architecture/*
+    
+markdown_extensions:
+    - admonition
+    - smarty
+    - extra
+    - sane_lists
+    - tables
+    - meta
+    - fenced_code
+    - footnotes
+#   - mdx_math: # needs mdx_math_svg and latex
+#       enable_dollar_delimiter: True #for use of inline $..$
+    - toc:
+        permalink: True
+        separator: "_"
+        toc_depth : 4
+        #toc_depth : "1-1"
+
+copyright: 
+
+plugins:
+#    - mkdocs-nav-enhancements
+#    - search
+#   - awesome-pages

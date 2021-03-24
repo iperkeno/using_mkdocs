@@ -1,0 +1,150 @@
+link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+:not([data-md-state="blur"]) + nav {
+  display: none;
+}
+
+.caption {
+	color: #297fb9;
+	font-size: 30px;
+}
+
+
+
+
+.rst-content p code {
+	padding: 0 .25em;
+	
+	white-space: pre;
+	
+	/*font-family: Source Code Pro, monospace;*/
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+	color: darkred;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	border-radius: 1px;
+}
+
+.rst-content pre code {
+    background: #eeffcc;
+    white-space: inherit;
+    
+	#font: normal 14px/1 Source Code Pro, monospace;
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+	#text-rendering: optimizeLegibility;
+	word-wrap: inherit; #normal
+	
+	margin: 1px 0 24px 0;
+	border: 1px solid #e1e4e5;
+	padding: 12px 12px;
+	overflow-x: auto;	
+}
+
+footer {
+    display: none;
+    visibility: hidden;
+}
+
+
+/* 
+	style link on destination:
+	
+	= is exactly equal
+	!= is not equal
+	^= is starts with
+	$= is ends with
+	*= is contains
+	~= is contains word
+	|= is starts with prefix (i.e., |= "prefix" matches "prefix-...")
+*/
+a[href$=".pdf"]:before {
+  content:"\f1c1";
+  font-family: fontawesome;
+  color: red;
+  	margin-right: 0.5em;
+}
+
+a[href$=".docx"]:before {
+  content:"\f1c2";
+  font-family: fontawesome;
+  color: blue;
+  	margin-right: 0.5em;
+}
+
+a[href$=".xlsx"]:before {
+  content:"\f1c3";
+  font-family: fontawesome;
+  color: green;
+  	margin-right: 0.5em;
+}
+
+a[href$=".png"]:before {
+  content:"\f1c5";
+  font-family: fontawesome;
+  color: purple;
+  	margin-right: 0.5em;
+}
+
+a[href$=".json"]:before {
+  content:"\f15b";
+  font-family: fontawesome;
+  color: black;
+  	margin-right: 0.5em;
+}
+
+a[href^="https://"]:before {
+        /* fully valid URL, likely external link */
+	content:"\f0c1";
+	font-family: fontawesome;
+	margin-right: 0.5em;
+}
+
+
+a[href^="https://svn"]:before {
+        /* SVN Repo */
+	content:"\f126";
+	#font-family: fontawesome;
+	padding-left: 0.25em;
+	margin-right: 0.25em;
+}
+
+a[href^="http://10.140.129.147:8080"]:before {
+        /* JIRA f7b1 f02e*/
+	content:"\1F79C";
+	font-family: fontawesome;
+	margin-right: 0.1em;
+}
+
+a[href^="time"]:before {
+        /* date time */
+	content:"\1f7b4";
+	#font-family: fontawesome;
+	padding-left: 0em;
+	margin-right: 0.2em;
+}
+
+a[href="http://google.com"] {
+        /* link to specific website */
+}
+
+a[href^="/"], a[href^=".."] {
+        /* internal relative link */
+}
+
+a[href^="mailto:"] {
+        /* email link */
+}
+
+a[href$=".doc"] {
+        /* Microsoft Word document */
+}
+
+a[href$=".mp3"] {
+        /* Music file */
+}
+
+a[href$=".zip"] {
+        /* Archive file */
+}
+
